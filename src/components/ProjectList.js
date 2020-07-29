@@ -1,0 +1,80 @@
+import React from 'react';
+import nbbws from '../assets/images/noblackout.png';
+import onaroll from '../assets/images/onaroll.png';
+import portalar from '../assets/images/portalAR.png';
+import todo from '../assets/images/todoapp.png';
+import notes from '../assets/images/notesapp.png';
+import wam from '../assets/images/wam.png';
+
+import ProjectCard from './ProjectCard';
+
+const ProjectList = () => {
+    const projects = [
+            {
+                title: 'Whack a Mole',
+                role: 'Web Development',
+                description: 'A whack a mole web game built with Javascript and HTML.',
+                imgsrc: wam,
+                alt: "whack a mole",
+                extLink: false,
+                github: 'https://github.com/jadeshenker/whack-a-mole'
+            },
+            {
+                title: '#NoBlackoutBrentwood',
+                role: 'Web Development',
+                description: 'A fully responsive website I designed and developed using React for #NoBlackoutBrentwood. The goal of this site is to present users with a clear concept of #NoBlackoutBrentwood\'s initiative and direct them to ways they can get involved.',
+                imgsrc: nbbws,
+                alt: "noblackout brentwood",
+                extLink: 'https://noblackoutbrentwood.netlify.app/',
+                github: false
+            },
+            {
+                title: 'Todo List App',
+                role: 'Web Development',
+                description: 'A fully responsive todo app built with React. Users can use this app to keep track of their todos as well as the tasks they have already completed. Users can also return to their saved lists of todos at any time.',
+                imgsrc: todo,
+                alt: "todo list",
+                extLink: 'https://jss-react-todo-list.netlify.app',
+                github: 'https://github.com/jadeshenker/to-do-reactapp'
+            },
+            {
+                title: 'Notes App',
+                role: 'Web Development',
+                description: 'A fully responsive notes app built with React. Notes are edited using Markdown syntax. Users can add, edit, and delete notes, and they will be saved for the user to return to later.',
+                imgsrc: notes,
+                alt: "notes app",
+                extLink: 'https://notes-react-app.netlify.app/',
+                github: 'https://github.com/jadeshenker/notes-reactapp'
+            },
+            {
+                title: 'PortalAR Game',
+                role: 'Game Development',
+                description: 'An AR portal game developed with a team of other students. This game was built with Unity 3D, Vuforia AR and C#.',
+                imgsrc: portalar,
+                alt: "portal AR game",
+                extLink: 'https://youtu.be/4AjW3oYZU0M',
+                github: false
+            },
+            {
+                title: '3D Platformer Game',
+                role: 'Game Development',
+                description: 'A 3D platformer iOS game built with Unity 3D and C#.',
+                imgsrc: onaroll,
+                alt: "on a roll game",
+                extLink: 'https://www.youtube.com/watch?v=pqnBdqRtc7c&feature=emb_title',
+                github: false            
+            }
+        ];
+
+        const renderProjects = projects.map((project, index) => {
+            return <ProjectCard project={project} key={index} />
+        });
+    
+    return(
+            <div>
+               {renderProjects}
+            </div>
+    ); 
+}
+
+export default ProjectList;
