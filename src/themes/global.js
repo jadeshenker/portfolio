@@ -1,5 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
+const breakpoints = {
+    sm: '(max-width: 420px)'
+}
+
 export const GlobalStyles = createGlobalStyle` 
     *, 
     *::after, 
@@ -91,6 +95,27 @@ export const GlobalStyles = createGlobalStyle`
         width: 50vw;
     }
 
+    .card-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    @media ${breakpoints.sm} {
+        .card-container, .landing-container {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .profile-intro {
+            max-width: 80vw;
+            margin: 20px auto;
+        }
+        .project-info {
+            width: 80vw;
+            margin-left: 0px;
+        }
+    }
+
     .proj-links-wrapper, .liinks-wrapper, .pill {
         box-shadow: 0 5px 4px rgba(0,0,0,0.05), 0 3px 5px rgba(0,0,0,0.05);
     }
@@ -138,17 +163,16 @@ export const GlobalStyles = createGlobalStyle`
         border-top: 3.5px solid ${({ theme }) => theme.accentColor };
     }
 
-    .card-container {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 3rem;
-    }
-
     .experience-container {
         margin: auto;
         width: 60vw;
     }
 
+    @media ${breakpoints.sm} {
+        .experience-container {
+            width: 80vw;
+        }
+    }
     .experience-container h4 , .skills-group { clear: both; }
 
     .skills-category {
