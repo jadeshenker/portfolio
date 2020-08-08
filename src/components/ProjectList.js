@@ -5,11 +5,21 @@ import portalar from '../assets/images/portalAR.png';
 import todo from '../assets/images/todoapp.png';
 import notes from '../assets/images/notesapp.png';
 import wam from '../assets/images/wam.png';
+import emaily from '../assets/images/emaily.png';
 
 import ProjectCard from './ProjectCard';
 
 const ProjectList = () => {
     const projects = [
+            {
+                title: 'Emaily',
+                role: 'Fullstack Web Development',
+                description: 'A web app built with Node.js and React which allows users to sign in with Google, send emails with surveys, and visualize data from the surveys.',
+                imgsrc: emaily,
+                alt: "emaily app",
+                extLink: 'https://shielded-sierra-05288.herokuapp.com/',
+                github: 'https://github.com/jadeshenker/emaily'
+            },
             {
                 title: 'Whack a Mole',
                 role: 'Web Development',
@@ -21,7 +31,7 @@ const ProjectList = () => {
             },
             {
                 title: '#NoBlackoutBrentwood',
-                role: 'Web Development',
+                role: 'Frontend Development',
                 description: 'A fully responsive website I designed and developed using React for #NoBlackoutBrentwood. The goal of this site is to present users with a clear concept of #NoBlackoutBrentwood\'s initiative and direct them to ways they can get involved.',
                 imgsrc: nbbws,
                 alt: "noblackout brentwood",
@@ -30,7 +40,7 @@ const ProjectList = () => {
             },
             {
                 title: 'Todo List App',
-                role: 'Web Development',
+                role: 'Frontend Development',
                 description: 'A fully responsive todo app built with React. Users can use this app to keep track of their todos as well as the tasks they have already completed. Users can also return to their saved lists of todos at any time.',
                 imgsrc: todo,
                 alt: "todo list",
@@ -39,7 +49,7 @@ const ProjectList = () => {
             },
             {
                 title: 'Notes App',
-                role: 'Web Development',
+                role: 'Frontend Development',
                 description: 'A fully responsive notes app built with React. Notes are edited using Markdown syntax. Users can add, edit, and delete notes, and they will be saved for the user to return to later.',
                 imgsrc: notes,
                 alt: "notes app",
