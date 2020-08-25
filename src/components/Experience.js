@@ -48,11 +48,17 @@ const Experience = ({ toggle }) => {
             <div className="experience-container">
                 <h4>SKILLS</h4>
                 {renderSkills}
-
+                
                 <h4 className="experience-header">EXPERIENCE</h4>
+
+                <h5>The Net Project</h5>
+                <p className="experience-subtitle">Frontend Developer</p>
+                <p>July 2020 - Present</p>
+                <p>Implementing a web app to help users find purpose using highly interactive 3D graphics. I am building the website using React.js, Three.js, and react-three-fiber.</p>
+
                 <h5>Empower Her* Voice</h5>
                 <p className="experience-subtitle">Web Designer &#38; Developer</p>
-                <p>June 2020 - Present</p>
+                <p>July 2020 - Present</p>
                 <p>Design and prototype a complete website redesign. Implement a fully responsive web design on Wix. Create enhanced features and user interactions using JavaScript and the Wix API.</p>
 
                 <h5>Sabai Design</h5>

@@ -8,6 +8,7 @@ const ProjectCard = ({ project }) => {
                 <div className="proj-links-wrapper">
                     {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>}
                     {project.codepen && <a href={project.codepen} target="_blank" rel="noopener noreferrer"><i className="fab fa-codepen"></i></a>}
+                    {project.dribble && <a href={project.dribble} target="_blank" rel="noopener noreferrer"><i className="fab fa-dribbble"></i></a>}
                     {project.extLink && <a href={project.extLink}target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt"></i></a>}
                 </div>
             </div>

@@ -130,7 +130,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .links-wrapper { 
-        width: 6rem;
+        width: 8rem;
     }
 
     .proj-links-wrapper {

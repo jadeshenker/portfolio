@@ -1,16 +1,25 @@
 import React from 'react';
-import nbbws from '../assets/images/noblackout.png';
 import onaroll from '../assets/images/onaroll.png';
 import portalar from '../assets/images/portalAR.png';
 import todo from '../assets/images/todoapp.png';
 import notes from '../assets/images/notesapp.png';
 import wam from '../assets/images/wam.png';
 import emaily from '../assets/images/emaily.png';
+import todoappdesign from '../assets/images/todoappdesign.png';
 
 import ProjectCard from './ProjectCard';
 
 const ProjectList = () => {
     const projects = [
+            {
+                title: 'Todo App Design System',
+                role: 'UI Design',
+                description: 'An experimental design system with custom made icons for a Todo App created in Figma.',
+                imgsrc: todoappdesign,
+                alt: "todo app design",
+                dribble: 'https://dribbble.com/shots/13991043-Todo-List-App-UI',
+                extLink: 'https://www.figma.com/file/u5OTPnJKtbWbtHtneIj9wN/todo-app?node-id=0%3A1/'
+            },
             {
                 title: 'Emaily',
                 role: 'Fullstack Web Development',
@@ -28,15 +37,6 @@ const ProjectList = () => {
                 alt: "whack a mole",
                 extLink: false,
                 github: 'https://github.com/jadeshenker/whack-a-mole'
-            },
-            {
-                title: '#NoBlackoutBrentwood',
-                role: 'Frontend Development',
-                description: 'A fully responsive website I designed and developed using React for #NoBlackoutBrentwood. The goal of this site is to present users with a clear concept of #NoBlackoutBrentwood\'s initiative and direct them to ways they can get involved.',
-                imgsrc: nbbws,
-                alt: "noblackout brentwood",
-                extLink: 'https://noblackoutbrentwood.netlify.app/',
-                github: false
             },
             {
                 title: 'Todo List App',
